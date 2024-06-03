@@ -1,0 +1,118 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #5a3813;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 36px;
+    color: #8b5e34;
+    font-family: 'Playfair Display', serif;
+}
+
+.established {
+    font-style: italic;
+    color: #7b4b2a;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.menu {
+    width: 80%;
+    background-color: rgba(255, 235, 205, 0.9);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: #8b5e34;
+    border: none;
+    margin: 20px 0;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 70%;
+    font-weight: bold;
+    color: #5a3813;
+}
+
+.price {
+    text-align: right;
+    width: 30%;
+    color: #5a3813;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 235, 205, 0.9);
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #5a3813;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5a3813;
+}
+
+a:hover {
+    color: #8b5e34;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #8b5e34;
+}
