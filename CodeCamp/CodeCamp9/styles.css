@@ -1,0 +1,97 @@
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#main {
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #eee;
+}
+
+#title {
+    font-size: 3rem;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+}
+
+#img-header {
+    margin: 16px 0;
+}
+
+#img-div {
+    background-color: white;
+}
+
+#image {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+#img-caption {
+    display: block;
+    padding: 15px 0 15px;
+}
+
+#tribute-info {
+    text-align: left;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+#tribute-info h3 {
+    text-align: center;
+}
+
+#tribute-info ul {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+#tribute-info ul li {
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 16px auto;
+    text-align: left;
+    max-width: 600px;
+    justify-content: center;
+    display: flex;
+}
+
+#tribute-link {
+    display: block;
+    margin-top: 20px;
+    color: #0366d6;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}
+
+ul > li {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    margin: 16px;
+}
