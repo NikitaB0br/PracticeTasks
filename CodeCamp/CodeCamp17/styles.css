@@ -12,11 +12,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #eee;
 }
 
+/* Header */
 header {
     background-color: #eee;
     color: black;
@@ -28,34 +27,29 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    box-sizing: border-box;
-    margin: 0;
 }
 
 #header-img {
-    width: 100%;
-    height: 100%;
     max-width: 300px;
-    margin: 0 0 0 2rem;
-    padding: 0;
+    margin-left: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-a {
-    padding: 0 200px 0 0;
-}
-
+/* Navigation bar */
 #nav-bar {
     display: flex;
     gap: 1rem;
+    margin-right: 2rem;
+    flex-wrap: wrap;
 }
 
 .nav-link {
     color: black;
     text-decoration: none;
+    padding: 0.5rem;
 }
 
 .nav-link:hover {
@@ -63,7 +57,7 @@ a {
 }
 
 main {
-    padding-top: 80px;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,41 +68,45 @@ main {
 
 #pricing {
     margin: 1rem 0 5rem;
-    padding: 0;
 }
 
 #pricing > h2 {
     margin: 0;
-    padding: 0;
 }
 
+/* Footer */
 footer {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #DDDDDD;
+    background-color: #DDD;
     text-align: right;
 }
 
+/* Section */
 section {
     width: 100%;
     padding: 2rem;
     text-align: center;
 }
 
+/* Feature card */
 .feature-card {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .feature-card img {
     margin-right: 5rem;
     filter: invert(50%) sepia(50%) saturate(2500%) hue-rotate(1deg) brightness(100%) contrast(100%);
+    max-width: 100%;
 }
 
 .feature-text {
     text-align: left;
+    flex: 1;
 }
 
 .feature-text > h3 {
@@ -128,8 +126,9 @@ form {
     align-items: center;
 }
 
+/* Input */
 input[type="email"], input[type="submit"] {
-    margin: 1rem 0 0.5rem;
+    margin-top: 1rem;
     padding: 0.5rem;
     font-size: 1rem;
 }
@@ -143,15 +142,15 @@ input[type="submit"] {
     color: black;
     border: none;
     cursor: pointer;
-    text-transform: uppercase ;
+    text-transform: uppercase;
     font-weight: 800;
-    margin: 0;
 }
 
 input[type="submit"]:hover {
     background-color: #F4A900;
 }
 
+/* Products section */
 #products {
     display: flex;
     flex-wrap: wrap;
@@ -161,24 +160,20 @@ input[type="submit"]:hover {
 
 .product-card {
     border: 1px solid black;
-    padding: 0;
     width: 250px;
     text-align: center;
 }
 
 .product-card h3 {
-    text-align: center;
     padding: 0.6rem;
-    background-color: #DDDDDD;
+    background-color: #DDD;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
 }
 
 .product-card .price {
-    color: black;
     font-size: 1.6rem;
-    text-align: center;
     padding: 1rem;
 }
 
@@ -197,6 +192,7 @@ input[type="submit"]:hover {
     background-color: #F4A900;
 }
 
+/* Media larger screens */
 @media (min-width: 768px) {
     .feature-card {
         justify-content: flex-start;
@@ -204,5 +200,45 @@ input[type="submit"]:hover {
 
     .feature-text {
         text-align: left;
+    }
+}
+
+/* Media smaller screens */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 0.5rem;
+    }
+
+    #header-img {
+        margin: 0 1rem;
+        max-width: 100%;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 1rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    .feature-card {
+        flex-direction: column;
+    }
+
+    .feature-card img {
+        margin: 0 0 1rem 0;
+    }
+
+    .feature-text {
+        text-align: center;
+    }
+
+    #pricing {
+        margin: 10rem 0 0 0;
     }
 }
