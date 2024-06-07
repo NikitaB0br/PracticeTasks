@@ -49,15 +49,14 @@ h1 {
 }
 
 label {
-    display: block;
+    display: flex;
     margin-bottom: 10px;
     font-weight: bold;
     color: #333;
 }
 
-label.inline-label {
-    display: inline;
-    margin-left: 10px;
+i {
+    padding-left: 6px;
 }
 
 input[type="text"],
