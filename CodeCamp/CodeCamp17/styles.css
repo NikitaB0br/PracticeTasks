@@ -15,7 +15,6 @@ body {
     background-color: #eee;
 }
 
-/* Header */
 header {
     background-color: #eee;
     color: black;
@@ -38,7 +37,6 @@ header {
     text-align: center;
 }
 
-/* Navigation bar */
 #nav-bar {
     display: flex;
     gap: 1rem;
@@ -74,7 +72,6 @@ main {
     margin: 0;
 }
 
-/* Footer */
 footer {
     max-width: 1000px;
     margin: 0 auto;
@@ -83,14 +80,12 @@ footer {
     text-align: right;
 }
 
-/* Section */
 section {
     width: 100%;
     padding: 2rem;
     text-align: center;
 }
 
-/* Feature card */
 .feature-card {
     display: flex;
     align-items: center;
@@ -126,7 +121,6 @@ form {
     align-items: center;
 }
 
-/* Input */
 input[type="email"], input[type="submit"] {
     margin-top: 1rem;
     padding: 0.5rem;
@@ -150,7 +144,6 @@ input[type="submit"]:hover {
     background-color: #F4A900;
 }
 
-/* Products section */
 #products {
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +185,6 @@ input[type="submit"]:hover {
     background-color: #F4A900;
 }
 
-/* Media larger screens */
 @media (min-width: 768px) {
     .feature-card {
         justify-content: flex-start;
