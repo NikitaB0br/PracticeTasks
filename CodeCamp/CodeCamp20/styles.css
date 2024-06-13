@@ -31,7 +31,7 @@ body {
     text-decoration: none;
     color: #F0F0F0;
     padding: 1.2rem 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ body {
 }
 
 #navbar a:last-child {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 #navbar a:hover {
@@ -58,10 +58,11 @@ body {
     justify-content: center;
     text-align: center;
     color: #F0F0F0;
+    padding: 2rem;
 }
 
 #welcome-section h1 {
-    font-size: 3.6rem;
+    font-size: 2.5rem;
     margin-bottom: 16px;
 }
 
@@ -69,7 +70,7 @@ body {
     font-family: "Raleway", sans-serif;
     font-style: italic;
     color: #BE3144;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
 }
 
@@ -83,7 +84,7 @@ body {
 }
 
 .project-tile {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Raleway", sans-serif;
     display: inline-block;
     position: relative;
@@ -92,27 +93,23 @@ body {
 .project-tile::after {
     content: '';
     display: block;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 0.01rem;
     background-color: #F0F0F0;
     position: absolute;
-    left: -5px;
+    left: 0;
     bottom: -5px;
 }
 
 #project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    #project-grid {
-        grid-template-columns: 1fr;
-    }
+    padding: 1rem;
 }
 
 .card {
@@ -127,10 +124,6 @@ body {
     cursor: pointer;
 }
 
-.first-row {
-    margin-top: 3rem !important;
-}
-
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -143,8 +136,8 @@ body {
 }
 
 .card p {
-    font-size: 1.5rem;
-    padding: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.7rem;
     color: #F0F0F0;
     text-align: center;
     transition: color 0.3s;
@@ -200,7 +193,7 @@ body {
 }
 
 .contact-section-header > h2 {
-    font-size: 4.2rem;
+    font-size: 2.5rem;
 }
 
 .contact-section-header > p {
@@ -213,7 +206,8 @@ body {
 
 .contact-links {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -222,16 +216,47 @@ body {
     color: white;
     display: flex;
     align-items: center;
+    font-size: 1rem;
+    transition: transform 0.3s ease-out;
 }
 
 .contact-details {
-    font-size: 2.4rem;
+    font-size: 1.2rem;
     text-shadow: 2px 2px 1px #1f1f1f;
-    transition: transform 0.3s ease-out;
 }
 
 .contact-details i {
     margin-right: 1rem;
-    font-size: 2.4rem;
+    font-size: 1.2rem;
 }
 
+.svg-image {
+    max-width: 30px;
+    margin-right: 5px;
+}
+
+.btn-contact-details:hover {
+    transform: translateY(10px);
+}
+
+footer {
+    border-top: 4px solid #BE3144;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #303841;
+    color: white;
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    margin: 1rem;
+    font-size: 1rem;
+}
