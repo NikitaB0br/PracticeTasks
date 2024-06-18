@@ -1,0 +1,132 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('town.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'MedievalSharp', cursive;
+    color: #331a00;
+    text-align: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+#game {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    width: 90%;
+}
+
+h1 {
+    color: #7d4900;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#text {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #331a00;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#controls,
+#stats,
+#monsterStats,
+#inventory {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #7d4900;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+#monsterStats {
+    display: none;
+    background-color: rgba(199, 13, 13, 0.8);
+}
+
+.stat {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #7d4900;
+    border: 2px solid #7d4900;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    background-image: linear-gradient(#a6630f, #7d4900);
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 100%;
+    max-width: 180px;
+}
+
+button:hover {
+    background-color: #a6630f;
+    border-color: #a6630f;
+}
+
+@media (max-width: 768px) {
+    #game {
+        margin: 20px auto;
+        padding: 15px;
+        transform: translateY(0);
+        top: auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #text, #controls, #stats, #monsterStats, #inventory {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #game {
+        margin: 10px auto;
+        padding: 10px;
+        transform: translateY(0);
+        top: auto;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #text, #controls, #stats, #monsterStats, #inventory {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+}
